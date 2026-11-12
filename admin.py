@@ -3,4 +3,8 @@ class Admin:
         self.name = name
 
     def get_permissions(self):
-        return f"Предоставлен доступ администратору {self.name}"
+        return (
+            f"Предоставлен доступ к:"
+            f" добавлению, чтению, обновлению, удалению "
+            f"администратору - {self.name}."
+        )

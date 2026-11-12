@@ -3,4 +3,4 @@ class User:
         self.name = name
 
     def get_permissions(self):
-        return f"Предоставлен доступ пользователю {self.name}"
+        return f"Предоставлен доступ к: чтению пользователю - {self.name}."

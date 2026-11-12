@@ -3,4 +3,4 @@ class Moderator:
         self.name = name
 
     def get_permissions(self):
-        return f"Предоставлен доступ модератору {self.name}"
+        return f"Предоставлен доступ к: чтению, изменению, удалению модератору - {self.name}."
