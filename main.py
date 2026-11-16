@@ -2,11 +2,13 @@ from user import User
 from admin import Admin
 from moderator import Moderator
 
+
 user = User("Иван")
 admin = Admin("Пётр")
 moderator = Moderator("Игорь")
 
 allowed_class = Admin
+
 
 def is_permission_allowed(person, allowed_type) -> None:
     if isinstance(person, allowed_type):

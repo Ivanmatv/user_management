@@ -1,6 +1,6 @@
 class User:
     def __init__(self, name):
-        self.name = name
+        self.__name: str = name
 
     def get_permissions(self) -> str:
-        return f"Предоставлен доступ к: чтению пользователю - {self.name}."
+        return f"Предоставлен доступ - {self.__name}."
